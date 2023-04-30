@@ -38,3 +38,11 @@ To comply with regulatory requirements, you should consult with legal experts in
 # Additional info
 
 While it is technically possible to create a platform that acts as a custodial Ethereum wallet provider, issues IBAN accounts, and associates NFTs with those accounts, it would require significant development and regulatory hurdles to overcome. It is important to carefully consider the regulatory and compliance requirements before embarking on such a venture.
+
+# .sol example
+
+The sol file (nfttiediban.sol) is an example Solidity contract that mints NFTs and associates them with specific IBAN accounts. This contract is just an example and would need to be tailored to your specific needs and requirements.
+
+This contract extends the ERC721 token standard to create an NFT contract that associates an IBAN with each NFT. The mint function allows the contract owner to mint a new NFT and associate it with a specific IBAN. The getIBAN function returns the IBAN associated with a given NFT. The transferFrom function overrides the default implementation to ensure that the IBAN associated with the transferred NFT matches the IBAN associated with the token ID.
+
+Again, please note that this is just an example and would need to be customized to your specific needs and requirements.
